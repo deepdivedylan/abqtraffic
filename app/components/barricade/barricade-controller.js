@@ -8,7 +8,7 @@ app.controller("BarricadeController", ["$scope", "barricades", "$routeParams", f
 
 	$scope.loadGoogleMap = function() {
 		$scope.googleMap = new google.maps.Map(document.getElementById("googleMap"), {
-			zoom: 13,
+			zoom: 12,
 			center: new google.maps.LatLng(35.1107, -106.61)
 		});
 	};
@@ -19,12 +19,19 @@ app.controller("BarricadeController", ["$scope", "barricades", "$routeParams", f
 		}
 
 		$scope.detail.geometry.paths.forEach(function(outerPath) {
+			var line = [];
 			outerPath.forEach(function(path) {
 				var latLng = new google.maps.LatLng(path[1], path[0]);
-				var marker = new google.maps.Marker({
-					position: latLng,
-					map: $scope.googleMap
-				});
+				line.push(latLng);
+			});
+
+			var fullPath = new google.maps.Polyline({
+				path: line,
+				geodesic: true,
+				map: $scope.googleMap,
+				strokeColor: "red",
+				strokeOpacity: 1.0,
+				strokeWeight: 4
 			});
 		});
 	};

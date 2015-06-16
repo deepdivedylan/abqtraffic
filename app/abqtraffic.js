@@ -4,11 +4,11 @@ app.config(function($routeProvider) {
 	$routeProvider
 		.when("/", {
 			controller: "IndexController",
-			templateUrl: "views/index.php"
+			templateUrl: "/~dmcdonald21/abqtraffic/app/components/index/index-view.php"
 		})
 		.when("/barricade/:id", {
 			controller: "BarricadeController",
-			templateUrl: "views/barricade.php"
+			templateUrl: "/~dmcdonald21/abqtraffic/app/components/barricade/barricade-view.php"
 		})
 		.otherwise({
 			redirectTo: "/"

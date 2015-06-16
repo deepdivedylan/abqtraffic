@@ -1,4 +1,4 @@
-var app = angular.module("AbqTraffic", ["ngRoute"]);
+var app = angular.module("AbqTraffic", ["ngRoute", "ngSanitize", "abqtrafficFilters"]);
 
 app.config(function($routeProvider) {
 	$routeProvider

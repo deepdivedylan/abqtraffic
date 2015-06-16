@@ -22,6 +22,7 @@ $PREFIX = str_repeat("../", $DEPTH_DIFFERENCE);
 		<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.min.js"></script>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-sanitize.min.js"></script>
 		<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?libraries=visualization"></script>
 		<title><?php echo $PAGE_TITLE; ?></title>
 	</head>

@@ -5,7 +5,7 @@
 			<th>Description</th><th>Start Time</th><th>End Date</th>
 		</tr>
 		<tr ng-repeat="barricade in barricades">
-			<td>{{ barricade.attributes.LOCATION_DESC }}</td>
+			<td><a ng-href="#/barricade/{{ $index }}" ng-click="open();">{{ barricade.attributes.LOCATION_DESC }}</a></td>
 			<td>{{ barricade.attributes.STARTWORK | date: "medium" }}</td>
 			<td>{{ barricade.attributes.ENDWORK | date: "medium" }}</td>
 		</tr>

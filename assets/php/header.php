@@ -19,9 +19,10 @@ $PREFIX = str_repeat("../", $DEPTH_DIFFERENCE);
 		<link type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 		<link type="text/css" href="<?php echo $PREFIX; ?>assets/css/abqtraffic.css" rel="stylesheet" />
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.min.js"></script>
+		<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?libraries=visualization"></script>
 		<title><?php echo $PAGE_TITLE; ?></title>
 	</head>
 	<body>

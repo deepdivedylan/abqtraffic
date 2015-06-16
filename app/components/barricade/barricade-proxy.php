@@ -6,6 +6,7 @@ if($outSR !== 4326) {
 	$outSR = "";
 }
 
-$url = "http://coagisweb.cabq.gov/arcgis/rest/services/public/trafficbarricades/MapServer/1/query?where=1+%3D+1&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&maxAllowableOffset=&geometryPrecision=&outSR=$outSR&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=true&returnM=true&gdbVersion=&returnDistinctValues=false&f=pjson";
+//$url = "http://coagisweb.cabq.gov/arcgis/rest/services/public/trafficbarricades/MapServer/1/query?where=1+%3D+1&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&maxAllowableOffset=&geometryPrecision=&outSR=$outSR&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=true&returnM=true&gdbVersion=&returnDistinctValues=false&f=pjson";
+$url = "barricades.json";
 header("Content-type: text/json");
 echo file_get_contents($url);

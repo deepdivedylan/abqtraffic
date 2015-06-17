@@ -12,7 +12,7 @@
 					<div class="input-group-addon">
 						<i class="fa fa-map-marker"></i>
 					</div>
-					<input type="text" name="origin" id="origin" placeholder="Enter Origin&hellip;" maxlength="128" />
+					<input type="text" name="origin" id="origin" placeholder="Enter Origin&hellip;" maxlength="128" class="fullWidth" />
 				</div>
 				<div class="input-group">
 					<input type="checkbox" id="gpsOrigin" name="gpsOrigin" />
@@ -25,7 +25,7 @@
 					<div class="input-group-addon">
 						<i class="fa fa-map-marker"></i>
 					</div>
-					<input type="text" name="destination" id="destination" placeholder="Enter Destination&hellip;" maxlength="128" />
+					<input type="text" name="destination" id="destination" placeholder="Enter Destination&hellip;" maxlength="128" class="fullWidth" />
 				</div>
 				<div class="input-group">
 					<input type="checkbox" id="gpsDestination" name="gpsDestination" />

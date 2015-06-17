@@ -5,3 +5,7 @@
 #verifyRoute button {
 	margin: 0.25em;
 }
+
+.fullWidth {
+	width: 100%;
+}

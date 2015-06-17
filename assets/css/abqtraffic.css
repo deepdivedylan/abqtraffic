@@ -1,3 +1,7 @@
 #googleMap {
 	height: 75vh;
 }
+
+#verifyRoute button {
+	margin: 0.25em;
+}

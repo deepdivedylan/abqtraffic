@@ -1,5 +1,5 @@
 <main class="container">
-	<h2 class="modal-title">View for Barricade #{{ detail.attributes.OBJECTID }}</h2>
+	<h2>View for Barricade #{{ detail.attributes.OBJECTID }}</h2>
 	<div class="row">
 		<section class="col-md-3">
 			<p><strong>Location:</strong> {{ detail.attributes.LOCATION_DESC }}</p>

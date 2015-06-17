@@ -9,4 +9,11 @@ app.controller("IndexController", ["$scope", "barricades", function($scope, barr
 			$scope.barricades[index].abqtraffic = {"detour": detour};
 		});
 	});
+
+	$scope.detourFilter = function() {
+		var checked = $scope.detourOnly;
+		if(checked === false) {
+			$scope.detourOnly = undefined;
+		}
+	};
 }]);

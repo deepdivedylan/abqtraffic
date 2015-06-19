@@ -12,10 +12,10 @@
 					<div class="input-group-addon">
 						<i class="fa fa-map-marker"></i>
 					</div>
-					<input type="text" name="origin" id="origin" placeholder="Enter Origin&hellip;" maxlength="128" class="fullWidth" />
+					<input type="text" name="origin" id="origin" placeholder="Enter Origin&hellip;" maxlength="128" class="fullWidth" ng-disabled="origin" />
 				</div>
 				<div class="input-group">
-					<input type="checkbox" id="gpsOrigin" name="gpsOrigin" />
+					<input type="checkbox" id="gpsOrigin" name="gpsOrigin" ng-click="useOrigin();" />
 					<label for="gpsOrigin" class="control-label">Use Current Location</label>
 				</div>
 			</div>
@@ -25,10 +25,10 @@
 					<div class="input-group-addon">
 						<i class="fa fa-map-marker"></i>
 					</div>
-					<input type="text" name="destination" id="destination" placeholder="Enter Destination&hellip;" maxlength="128" class="fullWidth" />
+					<input type="text" name="destination" id="destination" placeholder="Enter Destination&hellip;" maxlength="128" class="fullWidth" ng-disabled="destination" />
 				</div>
 				<div class="input-group">
-					<input type="checkbox" id="gpsDestination" name="gpsDestination" />
+					<input type="checkbox" id="gpsDestination" name="gpsDestination" ng-click="useDestination();" />
 					<label for="gpsDestination" class="control-label">Use Current Location</label>
 				</div>
 			</div>
@@ -40,7 +40,10 @@
 			</div>
 		</section>
 	</form>
-	<section id="verifyStatus"></section>
+	<section id="verifyStatusBar" class="alert alert-dismissible" ng-class="statusType" ng-show="showStatus" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close" ng-click="disableStatus();"><span aria-hidden="true">&times;</span></button>
+		{{ statusContent }}
+	</section>
 	<hr />
 	<h2>Current Barricades</h2>
 	<form class="form-horizontal">
